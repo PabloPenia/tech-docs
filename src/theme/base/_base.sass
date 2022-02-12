@@ -1,0 +1,64 @@
+:root
+  --color__main: #0073aa
+  --color__accent: #004b6e
+  --color__accent--bg: rgba(0, 115, 170, 0.3)
+  --color__txt: #000
+  --color__txt--light: #fff
+  --color__txt--lightBlue: rgb(221, 237, 248)
+html
+  scroll-behavior: smooth
+  scroll-padding-top: 6rem
+  @media (min-width: 768px)
+    scroll-padding-top: 0
+body
+  font-family: 'Open Sans', sans-serif
+
+footer, nav, nav > ul, figcaption
+  background-color: var(--color__main)
+  color: var(--color__txt--light)
+// headings
+h1, h2, h3
+  font-family: 'Poppins', sans-serif
+h2, h3
+  color: var(--color__main)
+h1
+  font-size: 1.5em
+h2
+  font-size: 2em
+
+main
+  padding-top: 6rem
+  @media (min-width: 768px)
+    padding-top: 0
+    margin-left: calc(20rem + 2%)
+figcaption
+  position: relative
+  top: -2em
+  padding: 0.5em
+  text-align: center
+  span
+    margin-left: 1em
+    font-weight: bold
+    &:first-of-type
+      margin: 0
+img
+  max-width: 100%
+  border: 1px solid var(--color__main)
+ul
+  padding-left: 0
+  list-style: none
+p
+  padding: 1em 0
+section
+  @media (min-width: 768px)
+    padding-top: 1em
+table
+  width: 100%
+  border-collapse: collapse
+thead
+  background: var(--color__accent--bg)
+  text-align: left
+table, td, th
+  border: 1px solid var(--color__main)
+td, th
+  padding: 0.5em 1em

@@ -1,0 +1,193 @@
+main
+  section#getting_started(aria-label='Getting Started')
+    h2 Getting Started
+    article
+      p
+        | WordPress is a free and open source content management system (CMS) based on PHP and MySQL. It is the most widely used CMS software in the world, and as of June 2021, it powers more than 40% of the top 10 million websites and has an estimated 64% market share of all websites built using a CMS.
+      p
+        | WordPress started as a simple blogging system in 2003, but it has evolved into a full CMS with thousands of plugins, widgets, and themes. It is licensed under the General Public License (GPLv2 or later).
+      p
+        | To learn more about WordPress, please refer to the list of standard WordPress features.
+  section#block_editor(aria-label='Block Editor')
+    h2 Block Editor
+    article
+      p
+        | Gutenberg is a codename for a whole new paradigm in WordPress site building and publishing, that aims to revolutionize the entire publishing experience as much as Gutenberg did the printed word. The project is right now in the second phase of a four-phase process that will touch every piece of WordPress &mdash; Editing, Customization (which includes Full Site Editing, Block Patterns, Block Directory and Block based themes), Collaboration, and Multilingual &mdash; and is focused on a new editing experience, the block editor (which is the topic of the current documentation).
+      figure
+        img(src='assets/images/quick-view-of-the-block-editor.png' alt='Quick view of the block editor')
+        figcaption
+          span 1.
+          |  Block Inserter 
+          span 2.
+          |  Block editor content area 
+          span 3.
+          |  Settings Sidebar
+      p
+        | Using a system of Blocks to compose and format content, the new block-based editor is designed to create rich, flexible layouts for websites and digital products. Content is created in the unit of blocks instead of freeform text with inserted media, embeds and Shortcodes (there&rsquo;s a Shortcode block though).
+      p
+        | Blocks treat Paragraphs, Headings, Media, and Embeds all as components that, when strung together, make up the content stored in the WordPress database, replacing the traditional concept of freeform text with embedded media and shortcodes. The new editor is designed with progressive enhancement, meaning that it is back-compatible with all legacy content, and it also offers a process to try to convert and split a Classic block into equivalent blocks using client-side parsing. Finally, the blocks offer enhanced editing and format controls.
+      p
+        | The Editor offers rich new value to users with visual, drag-and-drop creation tools and powerful developer enhancements with modern vendor packages, reusable components, rich APIs and hooks to modify and extend the editor through Custom Blocks, Custom Block Styles and Plugins.
+      p Learn to use the block editor to create media-rich posts and pages.
+  section#plugins(aria-label='Plugins')
+    h2 Plugins
+    article
+      p
+        | Welcome to the WordPress Plugin Developer Handbook; are you ready to jump right in to the world of WordPress plugins?
+      p
+        | The Plugin Developer Handbook is a resource for all things WordPress plugins. Whether you&rsquo;re new to WordPress plugin development, or you&rsquo;re an experienced plugin developer, you should be able to find the answer to many of your plugin-related questions right here.
+      ol
+        li
+          | If you&rsquo;re new to plugin development, start by reading the introduction and then move on to the basics.
+        li Section 3 will introduce you to plugin security.
+        li
+          | Hooks are what make your plugin interact with WordPress. Learn all about them in section 4.
+        li
+          | To find out more about WordPress&rsquo; built-in functionality that you can use in your plugin, check out sections 5 &ndash; 11: administration menus, shortcodes, settings, metadata, custom post types, taxonomies, and users.
+        li Learn about getting data using the HTTP API in section 12.
+        li
+          | If you&rsquo;re using JavaScript, jQuery or Ajax in your plugin, you&rsquo;ll find the information you need in section 13.
+        li To learn about time-based WordPress tasks using Cron, check out section 14.
+        li
+          | Sections 15-17 will introduce you to internationalizing your plugin, preparing it for release on WordPress.org, and some developer tools you might find useful.
+      p
+        | The WordPress Plugin Developer Handbook is created by the WordPress community, for the WordPress community. We are always looking for more contributors; if you&rsquo;re interested, stop by the docs team blog to find out more about getting involved.
+  section#themes(aria-label='Themes')
+    h2 Themes
+    article
+      p
+        | Welcome to the WordPress Theme Developer Handbook, your resource for learning all about the exciting world of WordPress themes.
+      p
+        | The Theme Developer Handbook is a repository for all things WordPress themes. Whether you&rsquo;re new to WordPress themes, or you&rsquo;re an experienced theme developer, you should be able to find the answer to many of your theme-related questions right here.
+      ol
+        li
+          | If you&rsquo;re new to developing WordPress themes, start with section 1, where you can find out what a theme is, learn about WordPress&rsquo; license, set up your development environment, and build your first theme.
+        li
+          | Once you&rsquo;re through the introduction, the Theme Basics section will introduce you to the building blocks of a WordPress theme.
+        li
+          | The Theme Functionality section will show you all of the different types of functionality you can make use of in your theme.
+        li
+          | If you&rsquo;re looking to give flexibility and yet protect your users, head over to the Customizer and Security sections
+        li
+          | If you&rsquo;ve got to grips with the basics of themes, check out the Advanced Theme Topics to learn about child themes, best UI practices, theme testing and more.
+        li
+          | Once you&rsquo;ve got your theme ready for the world, the final section will cover releasing your theme, teaching you some best practices for theme distribution, and for getting it ready for the WordPress.org theme directory.
+      p.info-box
+        | If you want to learn about experimental block themes go to the 
+        a(href='#block_editor') Block Editor Handbook
+        | . The Theme Developer Handbook is being updated with information about new features.
+      p
+        | The WordPress Theme Developer Handbook is created by the WordPress community, for the WordPress community. We are always looking for more contributors; if you&rsquo;re interested stop by the docs team blog to find out more about getting involved.
+  section#common_apis(aria-label='Common APIs')
+    h2 Common APIs
+    article
+      p
+        | This handbook serves as a clearinghouse for documentation on all APIs present within the WordPress software as well as APIs available from the WordPress.org ecosystem.
+      p
+        | Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur aspernatur asperiores laborum maiores illo velit explicabo sunt sed in eligendi natus ex praesentium itaque cumque, deserunt at, dolore quas nulla.
+      p
+        | Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores itaque ullam incidunt labore nostrum dicta voluptas delectus tempora, quam et ut quidem est totam quas exercitationem aspernatur, aliquid quia omnis?
+    article(aria-label='Responsive Images')
+      h2 Responsive Images
+      p
+        | Since WordPress 4.4, native responsive images is supported by including srcset and sizes attributes to the image markup it generates. For background on this feature, read the merge proposal.
+      h3 How It Works
+      p
+        | By including the available sizes of an image into a 
+        code.inline-code srcset
+        |  attribute, it allows the software to automatically use and display the right image based on a device&rsquo;s screen size. If you attach a full size 1500 x 706 image to a post in WordPress, mobile devices will see the large or medium-sized image instead&mdash;potentially saving bandwidth and speeding up page load times in the process.
+      p
+        | Note that for compatibility with existing markup, neither 
+        code.inline-code srcset
+        |  nor sizes are added or modified if they already exist in content HTML. Responsive images don&rsquo;t have any settings to configure as the magic happens behind the scenes.
+      h3 Browser Side
+      p
+        | To help browsers select the best image from the source set list, WordPress also include a default sizes attribute that is equivalent to 
+        code.inline-code (max-width: {{image-width}}px) 100vw, {{image-width}}px
+        | . While this default will work out of the box for a majority of sites, themes should customize the default sizes attribute as needed using the 
+        code.inline-code wp_calculate_image_sizes
+        |  filter.
+      p
+        | A normal browser request goes to server, server sends back response. This response includes links to other resources &ndash; fonts, css, JS, and images. The browser notices these resources, and sends additional requests to the server and fetches those resources.
+      h3 Customizing responsive image markup
+      p
+        | To modify the default srcset and sizes attributes, you should use the 
+        code.inline-code wp_calculate_image_srcset
+        |  and 
+        code.inline-code wp_calculate_image_sizes
+        |  filters, respectively.
+      p
+        | Overriding the srcset or sizes attributes for images not embedded in post content (e.g. post thumbnails, galleries, etc.), can be accomplished using the 
+        code.inline-code wp_get_attachment_image_attributes
+        |  filter, similar to how other image attributes are modified.
+      p
+        | Additionally, you can create your own custom markup patterns by using 
+        code.inline-code wp_get_attachment_image_srcset()
+        |  directly in your templates. Here is an example of how you could use this function to build an 
+        code.inline-code &lt;img&gt;
+        |  element with a custom sizes attribute:
+      code.block-code
+        | &lt;?php
+        | $img_src = wp_get_attachment_image_url( $attachment_id, &apos;medium&apos; );
+        | $img_srcset = wp_get_attachment_image_srcset( $attachment_id, &apos;medium&apos; );
+        | ?&gt;
+        | &lt;img src=&quot;&lt;?php echo esc_url( $img_src ); ?&gt;&quot; srcset=&quot;&lt;?php echo esc_attr( $img_srcset ); ?&gt;&quot; sizes=&quot;(max-width: 50em) 87vw, 680px&quot; alt=&quot;Foo Bar&quot;&gt;
+  section#rest_api(aria-label='Rest API')
+    h2 Rest API
+    article
+      p
+        | The WordPress REST API provides an interface for applications to interact with your WordPress site by sending and receiving data as JSON (JavaScript Object Notation) objects. It is the foundation of the WordPress Block Editor, and can likewise enable your theme, plugin or custom application to present new, powerful interfaces for managing and publishing your site content.
+      p
+        | Using the WordPress REST API you can create a plugin to provide an entirely new admin experiences for WordPress, build a brand new interactive front-end experience, or bring your WordPress content into completely separate applications.
+      p
+        | The REST API is a developer-oriented feature of WordPress. It provides data access to the content of your site, and implements the same authentication restrictions &mdash; content that is public on your site is generally publicly accessible via the REST API, while private content, password-protected content, internal users, custom post types, and metadata is only available with authentication or if you specifically set it to be so. If you are not a developer, the most important thing to understand about the API is that it enables the block editor and modern plugin interfaces without compromising the security or privacy of your site.
+      h3 What is a Rest API?
+      p
+        | An API is an Application Programming Interface. REST, standing for &ldquo;REpresentational State Transfer,&rdquo; is a set of concepts for modeling and accessing your application&rsquo;s data as interrelated objects and collections. The WordPress REST API provides REST endpoints (URLs) representing the posts, pages, taxonomies, and other built-in WordPress data types. Your application can send and receive JSON data to these endpoints to query, modify and create content on your site. JSON is an open standard data format that is lightweight and human-readable, and looks like Objects do in JavaScript. When you request content from or send content to the API, the response will also be returned in JSON. Because JSON is widely supported in many programming languages, developers can build WordPress applications in client-side JavaScript (like the block editor), as mobile apps, or as desktop or command line tools.
+      p.info-box
+        | The REST API is just one of many APIs provided by WordPress. You can find the documentation on these additional APIs here.
+  section#wp_cli(aria-label='WP CLI')
+    h2 WP CLI
+    article
+      p
+        | Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aliquid quidem sed porro, labore sit maiores repellendus rerum repellat. Eum eius dolorem optio aliquid nihil voluptate ullam adipisci, aperiam expedita.
+      |         section
+      table
+        caption List of available commands
+        thead
+          tr
+            th(scope='col') Command
+            th(scope='col') Description
+        tbody
+          tr
+            td.cmd wp_admin
+            td Open /wp-admin/ in a browser.
+          tr
+            td.cmd wp_cache
+            td Adds, removes, fetches, and flushes the WP Object Cache object.
+          tr
+            td.cmd wp_cap
+            td Adds, removes, and lists capabilities of a user role.
+          tr
+            td.cmd wp_cli
+            td Reviews current WP-CLI info, checks for updates, or views defined aliases.
+          tr
+            td.cmd wp_config
+            td Generates and reads the wp-config.php file.
+  section#code_reference(aria-label='Code Reference')
+    h2 Code Reference
+    p
+      | Want to know what&apos;s going on inside WordPress? Search the Code Reference for more information about WordPress&apos; functions, classes, methods, and hooks.
+    p
+      | Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae reprehenderit voluptas nostrum at nemo soluta nisi laudantium officia amet assumenda enim quod, corporis deserunt voluptatibus, dicta sunt vitae, error nam!
+    p
+      | Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam exercitationem enim delectus! Asperiores amet vitae corrupti ad commodi voluptatum laborum suscipit, sit totam facere, non quibusdam! Possimus velit eos commodi?
+  section#coding_standards(aria-label='Coding Standards')
+    h2 Coding Standards
+    article
+      p
+        | WordPress is a big project with thousands of contributors. It&rsquo;s important that best practices are followed so that the codebase is consistent and readable, and changes are easy to find and read, whether the code is five days old or five years old. What follows are a series of best practices to help keep WordPress code clean and well documented for years to come.
+      p
+        | Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis illo voluptate unde porro praesentium mollitia alias autem, soluta voluptas maiores non blanditiis in officiis sunt culpa facilis adipisci placeat ad, harum omnis quod iure quia sit! Veritatis nam debitis, itaque id, adipisci ad maxime officia praesentium nostrum facere corporis sed. Esse magni ea deserunt officia corporis blanditiis alias adipisci rerum?
+      p
+        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit quis voluptates nihil modi quas voluptatem ducimus ab animi ipsa! Fuga, asperiores? Sed, praesentium quam possimus distinctio ipsa delectus tempora. Ducimus unde explicabo quo eaque dolores, laudantium asperiores maxime voluptate enim aspernatur, neque hic saepe impedit suscipit vitae cum possimus velit tempore ad cumque et illum atque non. Quae, voluptatum odio.

@@ -1,0 +1,74 @@
+nav
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  padding: 0.5em 2%
+  display: flex
+  flex-wrap: wrap
+  place-content: center space-between
+  > button
+    display: none
+    background: none
+    border: 1px solid var(--color__accent)
+    border-radius: 0.5rem
+    box-shadow: 0px 0px 2px 1px var(--color__accent) inset
+    color: var(--color__txt--light)
+    cursor: pointer
+    font-size: 1.5em
+    @media (min-width: 768px)
+      display: none
+    &:after
+      content: "\2630"
+    span
+      position: absolute
+      clip: rect(1px, 1px, 1px, 1px)
+      padding: 0
+      border: 0
+      overflow: hidden
+    &:focus, &:hover
+      background-color: var(--color__accent)
+      box-shadow: 0px 0px 2px 1px var(--color__main) inset
+      color: var(--color__txt--lightBlue)
+  > ul
+    position: absolute
+    top: 100%
+    right: 0
+    text-align: right
+    @media (min-width: 768px)
+      position: relative
+    li:hover, li:focus
+      background-color: var(--color__accent)
+    a
+      display: block
+      padding: 0.3em 0.6em
+      color: var(--color__txt--light)
+      font-size: 1em
+      text-decoration: none
+      &:hover, &:focus
+        color: var(--color__txt--lightBlue)
+  @media (min-width: 768px)
+    position: -webkit-sticky
+    position: sticky
+    padding: 0.5em 0
+    float: left
+    display: block
+    height: 100%
+    min-height: 100vh
+    width: 20rem
+    overflow: hidden
+    header
+      margin: 0.5em
+      text-align: center
+
+.js nav
+  > ul
+    display: none
+    @media (min-width: 768px)
+      display: block
+    &.is-active
+      display: block
+  > button
+    display: block
+    @media (min-width: 768px)
+      display: none
